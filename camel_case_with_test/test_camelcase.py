@@ -37,6 +37,7 @@ class TestCamelCase(TestCase):
         self.assertEqual('helloWorld', camel_case.camel_case('HeLlO WoRlD'))
         
     def test_newline_or_tab_removed(self):
+        #remove new line or tab
         self.assertEqual('helloWorld', camel_case.remove_special_characters('\n hello \n World'))
 
 
